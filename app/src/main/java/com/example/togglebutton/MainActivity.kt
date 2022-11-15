@@ -2,9 +2,7 @@ package com.example.togglebutton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import android.widget.ToggleButton
 
 class MainActivity : AppCompatActivity() {
@@ -30,84 +28,75 @@ class MainActivity : AppCompatActivity() {
         score.text = kolejka.toString()
 
         one.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[0] != 1) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === false && three.isChecked === false && four.isChecked === false && five.isChecked === false && six.isChecked === false && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 1) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         two.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[1] != 2) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (one.isChecked === true && three.isChecked === false && four.isChecked === false && five.isChecked === false && six.isChecked === false && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 2) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         three.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[2] != 3) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (one.isChecked === true && two.isChecked === true && four.isChecked === false && five.isChecked === false && six.isChecked === false && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 3) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         four.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[3] != 4) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (one.isChecked === true && two.isChecked === true && three.isChecked === true && five.isChecked === false && six.isChecked === false && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 4) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         five.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[4] != 5) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === true && three.isChecked === true && four.isChecked === true && one.isChecked === true && six.isChecked === false && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 5) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         six.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[5] != 6) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === true && three.isChecked === true && four.isChecked === true && five.isChecked === true && one.isChecked === true && seven.isChecked === false &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 6) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         seven.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[6] != 7) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === true && three.isChecked === true && four.isChecked === true && five.isChecked === true && six.isChecked === true && one.isChecked === true &&
+                eight.isChecked === false && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 7) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         eight.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[7] != 8) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === true && three.isChecked === true && four.isChecked === true && five.isChecked === true && six.isChecked === true && seven.isChecked === true &&
+                one.isChecked === true && nine.isChecked === false) { }
             else {
-                if (kolejka[8] == 8) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
         nine.setOnCheckedChangeListener { _, isChecked ->
-            if (kolejka[8] != 9) {
-                Toast.makeText(this, "Niepoprawna kolejnosc!", Toast.LENGTH_SHORT).show()
-                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
-                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false }
+            if (two.isChecked === true && three.isChecked === true && four.isChecked === true && five.isChecked === true && six.isChecked === true && seven.isChecked === true &&
+                eight.isChecked === true && one.isChecked === true) { wynik ++; score.text = wynik.toString() }
             else {
-                if (kolejka[8] == 9) Toast.makeText(this, "Wygrales!", Toast.LENGTH_SHORT).show()
+                one.isChecked = false; two.isChecked = false; three.isChecked = false; four.isChecked = false; five.isChecked = false
+                six.isChecked = false; seven.isChecked = false; eight.isChecked = false; nine.isChecked = false
             }
         }
     }

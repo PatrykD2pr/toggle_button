@@ -132,18 +132,18 @@
 
     <TextView
         android:id="@+id/score"
-        android:layout_width="156dp"
-        android:layout_height="62dp"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
         android:text="0"
         android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="8sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.274" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
